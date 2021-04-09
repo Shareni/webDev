@@ -1,0 +1,62 @@
+/* font-family: 'Roboto Mono', monospace; ; */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-primary: rgba(235, 69, 32, 0.82);
+    --clr-dark: #AAA4A4;
+    --clr-light: #F5EFEB;
+    --fw-normal: 400;
+    --fw-bold: 700;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.125rem;
+    color: var(--clr-dark);
+}
+
+.nav-header {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.nav-slider {
+    position:absolute;
+    top: 30%
+}
+
+.main { 
+    display: flex;
+    flex-direction: column;
+    padding-left: 20%;
+    padding-bottom: 40%;
+    height: 100vh;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+.main--city {
+    background: url(../media/splash_1920.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.test {
+    height: 100vh;
+    width: 100%;
+    background-color: red;
+    color: pink;
+}
