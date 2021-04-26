@@ -6,10 +6,7 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-snap-type: y mandatory;
-}
-
+html,
 body {
   scroll-snap-type: y mandatory;
 }
@@ -24,13 +21,6 @@ a {
   --clr-light: #f5efeb;
   --fw-normal: 400;
   --fw-bold: 700;
-}
-
-body {
-  margin: 0;
-  font-family: "Roboto Mono", monospace;
-  font-size: 2rem;
-  color: var(--clr-dark);
 }
 
 .nav-header {
@@ -58,11 +48,18 @@ body {
   }
 }
 
+body {
+  margin: 0;
+  font-family: "Roboto Mono", monospace;
+  font-size: 2rem;
+  color: var(--clr-dark);
+}
+
 .page {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  scroll-snap-align: center;
+  height: 110vh;
+  scroll-snap-align: start;
 }
 
 .splash {
@@ -83,7 +80,11 @@ body {
 }
 
 .splash-title {
-  margin-bottom: -1rem;
+  margin-bottom: 1rem;
+}
+
+.splash-subtitle {
+  color: var(--clr-dark);
 }
 
 .bar--horizontal {
