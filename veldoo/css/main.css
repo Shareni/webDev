@@ -170,7 +170,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 5rem 5rem 0rem 5rem;
+  padding: 15rem 5rem 0rem 5rem;
 }
 .services--background {
   background-color: grey;
@@ -189,6 +189,7 @@ body {
 }
 .services--subtitles h2 {
   font-size: 2.3rem;
+  padding-right: 0.7em;
 }
 .services--subtitles > a {
   color: var(--clr-dark);
@@ -222,7 +223,7 @@ body {
     font-size: 1.2rem;
   }
   .page {
-    max-height: 110vh;
+    max-height: 103vh;
   }
 
   .nav-slider {
@@ -232,6 +233,7 @@ body {
 
   .splash {
     padding-top: 20%;
+    margin-bottom: -70vh;
   }
   .splash--text {
     padding-left: 20%;

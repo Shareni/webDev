@@ -1,7 +1,7 @@
 function isInViewport(element) {
   const rect = element.getBoundingClientRect();
   console.log(rect);
-  return rect.top >= 0 && rect.left >= 0;
+  return rect.top >= -2 && rect.left >= 0;
 }
 
 const splash = document.querySelector("div.splash");
