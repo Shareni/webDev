@@ -1,18 +1,16 @@
+const splash = document.querySelector("div.splash");
+const about = document.querySelector("div.about");
+const services = document.querySelector("div.services");
+
 function isInViewport(element) {
   const rect = element.getBoundingClientRect();
   console.log(rect);
   return rect.top >= -2 && rect.left >= 0;
 }
 
-const splash = document.querySelector("div.splash");
-const about = document.querySelector("div.about");
-const services = document.querySelector("div.services");
-
 const splashBar = document.querySelector("#bar--splash");
 const aboutBar = document.querySelector("#bar--about");
 const servicesBar = document.querySelector("#bar--services");
-
-let number = document.querySelector(".nav--number");
 
 function showBar(...element) {
   element[0].style.display = "block";
@@ -20,6 +18,8 @@ function showBar(...element) {
     element[i].style.display = "none";
   }
 }
+
+let number = document.querySelector(".nav--number");
 
 function changeNumber(num) {
   number.innerHTML = `0${num}`;
